@@ -20,7 +20,7 @@ export default class YouTubeDebugger extends React.Component {
 
   handleBitrateClick = () => {
     this.setState({ settings: {...this.state.settings, bitrate: 12} });
-  }
+  };
 
   handleResolutionClick = () => {
     this.setState({
@@ -29,9 +29,9 @@ export default class YouTubeDebugger extends React.Component {
           video: {
             ...this.state.settings.video, resolution: '720p'
           }
-      }
-  });
-}
+        }
+    });
+  };
 
   render(){
     return (
